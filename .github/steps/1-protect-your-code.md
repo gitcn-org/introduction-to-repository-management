@@ -1,69 +1,74 @@
-# Step 1: Protect your code
+# 步骤 1: 保护你的代码
 
-It's been a busy month at Mergington High! Your simple website for managing extra-curricular activities has really taken off. What started as a basic sign-up form for a few activities has grown into the go-to place for half the school activities. 📚✨
+假设你为 Mergington 高中开发了一个管理课外活动的网站，这个网站突然火了起来，原本只是一个简单的报名工具，现在已经成了学校一半社团活动的核心平台 📚✨。
 
-Principal Martinez was so impressed with your work that they announced at the last staff meeting that ALL clubs should start using the website. While this is exciting, you're a bit nervous - the last thing you want is an accidental change breaking the system right before the big Fall Activities Fair! 😰
+校长 Martinez 对你的成果非常满意，甚至在教职工会议上宣布：所有社团都要用这个网站！
 
-When more teachers start helping with the Mergington High activities website, it's important to add some safeguards. Thankfully, GitHub provides several ways to protect your repository:
+这当然是好事，但你心里也有点紧张——万一有人不小心改坏了代码，偏偏又是在秋季活动展前夕，那可就麻烦了 😰
 
-1. **Repository Rulesets** - These provide safeguards to limit:
+随着越来越多老师加入协作，现在必须给仓库加点“安全措施”。好在 GitHub 提供了不少工具来帮你做到这一点：
 
-   - Pushing code directly to important branches
-   - Deleting or renaming branches
-   - Force pushing (which can overwrite history)
-   - (and much more)
+## 关键保护手段
 
-1. **`.gitignore`** - This special file tells Git which files it should NOT track, like:
+1. **仓库规则集**（Repository Rulesets）：可以限制一些高风险操作，比如：
 
-   - Temporary files that your code creates while running
-   - Secret configuration files with sensitive information
-   - System files that other developers don't need
+   - 不能直接往重要分支（如 main）提交代码
+   - 防止分支被删除或重命名
+   - 禁止强制推送（避免历史被覆盖）
+   - 以及更多控制策略
+
+1. **`.gitignore`** - 这是一个“忽略清单”，告诉 Git 哪些文件不应该被纳入版本控制，例如：
+
+   - 临时文件
+   - 包含密码或敏感信息的配置文件
+   - 其他开发者不需要的系统文件
 
 > [!TIP]
-> Think of these settings like the editorial process of a school yearbook. Various student committees will take photos and write articles, then the yearbook president will make adjustments to make sure everything flows together properly. Finally, a teacher/advisor will sign off that all content is appropriate.
+> 可以把这些设置想象成学校校刊的编辑流程：各个学生委员会负责拍照和撰写文章，最后由校刊主编调整排版，确保整体流畅，再由老师/顾问签字确认内容合适。
 
-## ⌨️ Activity: (optional) Get to know our extracurricular activities site
+## ⌨️ 实操练习: (可选) 体验一下网站项目
 
 <details>
-<summary>Show Steps</summary>
+<summary>展示步骤</summary>
 
-In [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot/) exercise, we have been developing the Extracurricular activities website. You can follow these steps to start up the development environment and try it out.
+在[GitHub Copilot 入门指南](https://github.com/skills/getting-started-with-github-copilot/) 课程中，我们开发了这个课外活动网站。你可以按照以下步骤启动开发环境并进行体验。
 
-> ❗ **Important:** Opening a development environment and running the application is **NOT** necessary to complete this exercise. You can skip this activity if desired.
+> [!IMPORTANT]
+> 这一部分主要是为了让你体验课外活动网站，**不是**完成本次练习的必要条件。如果你愿意，可以跳过此活动。
 
-1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
+1. 创建在线开发环境（Codespace）：右键点击下面的按钮，在新标签页中打开**创建 Codespace** 页面。使用默认配置。
 
    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
 
-1. Wait some time for the environment to be prepared. It will automatically install all requirements and services.
+1. 等待一段时间，让环境准备就绪。它会自动安装所有需要的依赖库和服务。
 
-1. Validate the **GitHub Copilot** and **Python** extensions are installed and enabled.
+1. 确认 **GitHub Copilot** 和 **Python** 插件已安装并启用。
 
    <img width="300" alt="copilot extension for VS Code" src="https://github.com/user-attachments/assets/ef1ef984-17fc-4b20-a9a6-65a866def468" /><br/>
    <img width="300" alt="python extension for VS Code" src="https://github.com/user-attachments/assets/3040c0f5-1658-47e2-a439-20504a384f77" />
 
-1. Try running the application. In the left sidebar, select the **Run and Debug** tab and then press the **Start Debugging** icon.
+1. 运行项目：在左侧边栏中，选择 **Run and Debug** 选项卡，然后按 **Start Debugging** 图标。
 
    <details>
-   <summary>📸 Show screenshot</summary><br/>
+   <summary>📸 查看截图</summary><br/>
 
    <img width="300" alt="run and debug" src="https://github.com/user-attachments/assets/50b27f2a-5eab-4827-9343-ab5bce62357e" />
 
    </details>
 
    <details>
-   <summary>🤷 Having trouble?</summary><br/>
+   <summary>🤷 遇到问题？</summary><br/>
 
-   If the **Run and Debug** area is empty, try reloading VS Code: Open the command palette (`Ctrl`+`Shift`+`P`) and search for `Developer: Reload Window`.
+   如果**Run and Debug**区域为空，请尝试重新加载VS Code：打开命令面板（`Ctrl`+`Shift`+`P`）并搜索 `Developer: Reload Window`。
 
    <img width="300" alt="empty run and debug panel" src="https://github.com/user-attachments/assets/0dbf1407-3a97-401a-a630-f462697082d6" />
 
    </details>
 
-1. Use the **Ports** tab to find the webpage address, open it, and verify it is running.
+1. 在 **Ports** tab 中找到网页访问地址，打开链接确认是否能正常访问。
 
    <details>
-   <summary>📸 Show screenshot</summary><br/>
+   <summary>📸 查看截图</summary><br/>
 
    <img width="350" alt="ports tab" src="https://github.com/user-attachments/assets/8d24d6b5-202d-4109-8174-2f0d1e4d8d44" />
 
@@ -73,57 +78,57 @@ In [Getting Started with GitHub Copilot](https://github.com/skills/getting-start
 
 </details>
 
-## ⌨️ Activity: Add a branch ruleset
+## ⌨️ 实操练习：添加分支保护规则
 
-To get started, let's add some protections so that no one accidentally breaks the club registration system.
+首先，让我们添加一些保护措施，以防止有人意外破坏系统。
 
-1. If necessary, open another tab and navigate to this repository. We will start on the **Settings** tab.
+1. 如果有必要，打开另一个标签页并导航到此仓库。进入仓库的 **Settings（设置）** 页面
 
-1. In the left navigation, expand the **Rules** area and select **Rulesets**.
+1. 在左侧导航中，展开 **Rules** 区域，然后选择 **Rulesets**。
 
-1. Click the **New ruleset** dropdown and select **New branch ruleset**.
+1. 单击 **New ruleset** 按钮，然后选择 **New branch ruleset**。
 
    <img width="250" alt="image" src="https://github.com/user-attachments/assets/1e9fd519-1421-4d6b-b654-a3fe53a8fb75" />
 
-1. Set the **Ruleset Name** as `Protect main` and change the **Enforcement status** to `Active`.
+1. 设置 **Ruleset Name** 为 `Protect main`，并将 **Enforcement status** 设为 `Active`。
 
    <img width="250" alt="image" src="https://github.com/user-attachments/assets/ce30fd34-39b5-4e22-b348-4af61fd05cd1" />
 
-1. Find the **Targets** section and use the **Add target** dropdown to add 2 entries:
+1. 找到 **Targets** 部分，使用 **Add target** 下拉菜单添加 2 个条目：
 
-   1. Add the **Include default branch** option to ensure protections aren't bypassed by switching the default branch.
+   1. 添加 **Include default branch** 选项，包含默认分支（防止切换默认分支绕过规则）
 
       <img width="250" alt="image" src="https://github.com/user-attachments/assets/217263cc-d5c2-4ac0-b03c-a72494e5c812" />
 
-   1. Use the **include by pattern** option and enter the pattern `main`.
+   1. 使用 **include by pattern** 选项，并输入模式 `main`
 
       <img width="250" alt="image" src="https://github.com/user-attachments/assets/968c9ed8-b051-44eb-af42-d99670ad31fd" />
 
       <img width="250" alt="image" src="https://github.com/user-attachments/assets/ddc52767-d93e-4c9e-a77a-90c3b5c08fb5" />
 
-1. Find the **Rules** section and ensure the following items are checked.
+1. 找到 **Rules** 部分，确保以下选项已选中。
 
-   - [x] Restrict deletions
-   - [x] Require a pull request before merging
-     - Required approvals: `0`
-     - [x] Require review from Code Owners
-   - [x] Block force pushes
+   - [x] Restrict deletions (限制删除分支)
+   - [x] Require a pull request before merging (合并前需要拉取请求)
+     - Required approvals: `0` (需要的审批数量: `0`)
+     - [x] Require review from Code Owners (需要代码所有者审查)
+   - [x] Block force pushes (禁止强制推送)
 
-1. Scroll to the bottom and click the **Create** button to save the ruleset.
+1. 滚动到底部，单击 **Create** 按钮保存规则集。
 
-## ⌨️ Activity: Create a `.gitignore` file
+## ⌨️ 实操练习：创建 `.gitignore` 文件
 
-We know many teachers use different tools, so let's make sure they don't accidentally commit unnecessary files.
+我们知道很多老师使用不同的工具，为了避免大家提交不必要的文件，可以创建一个`.gitignore`文件来告诉 Git。
 
-1. At the top navigation, return to the **Code** tab and verify you are on the `main` branch.
+1. 在顶部导航栏，返回 **Code** 选项卡，确认你位于 `main` 分支上。
 
-1. Above the list of files, click the **Add file** dropdown and select **Create new file**.
+1. 在文件列表上方，点击 **Add file** 下拉菜单，选择 **Create new file** 新建文件。
 
    <img width="300" alt="New file button" src="https://github.com/user-attachments/assets/8f3f8da8-1471-485a-9df5-8c03ecba2d8e"/>
 
-1. Enter the file name `.gitignore`. We will ignore the template selector for now and make our own. Copy the below example content into it.
+1. 输入文件名 `.gitignore`。我们将先忽略模板选择器，稍后再自定义。将以下示例内容复制到文件中。
 
-   <img width="350" alt="preview of new file" src="https://github.com/user-attachments/assets/580d1a63-a264-4d44-8901-50ad708b8822"/>
+   <img width="350" alt="新文件预览" src="https://github.com/user-attachments/assets/580d1a63-a264-4d44-8901-50ad708b8822"/>
 
    ```gitignore
    # Python backend for club management
@@ -152,22 +157,22 @@ We know many teachers use different tools, so let's make sure they don't acciden
    Thumbs.db      # For teachers with Windows
    ```
 
-1. In the top right, select the **Commit changes...** button. Notice that it won't let us commit to the `main` branch! Our ruleset is working! Nice!
+1. 在页面右侧，选择 **Commit changes...** 按钮。请注意，我们无法直接提交到 `main` 分支！这说明我们的规则集正在起作用，太棒了！
 
    <img width="400" alt="image" src="https://github.com/user-attachments/assets/4e85948d-75c8-4c13-8ddd-4707bf9b0805" />
 
-1. Enter `prepare-to-collaborate` for the branch name then click the **Propose changes** button. You will be forwarded to a new page to start a new pull request.
+1. 在输入框中，输入 `prepare-to-collaborate` 作为分支名称，然后点击 **Propose changes** 按钮。你会跳转到一个新页面，以发起一个新的拉取请求。
 
-1. Set the title to `Prepare to collaborate` and click the **Create pull request** button. **Do NOT merge yet**, since we will be adding more collaboration related changes.
+1. 设置标题为 `Prepare to collaborate`，然后点击 **Create pull request** 按钮。**请不要立即合并**，因为我们还要添加更多与协作相关的更改。
 
-1. With the file committed, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+1. 文件已提交，Mona 会自动检查你的工作。稍等片刻，她会在评论中给出反馈与下一步任务。
 
 > [!TIP]
-> GitHub and the community have built a repository with [sample `.gitignore` files](https://github.com/github/gitignore) for many situations. Make sure to check it out!
+> GitHub 官方提供了大量现成的 `.gitignore` 模板，适用于不同语言和项目类型，可以在 [github/gitignore](https://github.com/github/gitignore) 仓库中查看。
 
 <details>
-<summary>🤷 Having trouble?</summary><br/>
+<summary>🤷 遇到问题?</summary><br/>
 
-Make sure you pushed the `.gitignore` file to `prepare-to-collaborate` branch. Exact naming for both matters!
+确保你将 `.gitignore` 文件提交到了 `prepare-to-collaborate` 分支。文件名和分支名都要完全匹配！
 
 </details>

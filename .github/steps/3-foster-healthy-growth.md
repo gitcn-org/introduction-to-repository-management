@@ -1,27 +1,27 @@
-# Step 3: Foster healthy growth
+# 步骤 3: 营造健康发展氛围
 
-With so many eager contributors, Principal Martinez pulled you aside after morning announcements: "Your website is becoming critical school infrastructure! We need to make sure it grows in a healthy way as more teachers join. Can you add some guidelines to keep everything organized?"
+随着越来越多的人加入，Martinez 校长在晨会后特意找你谈话：“你的网站正成为学校的关键基础设施！我们需要确保它随着越来越多老师的加入而健康发展。你能添加一些指南来保持一切井然有序吗？”
 
-As your extra-curricular activities website grows, you'll need more than just technical protections and contribution guides. You'll also have to encourage healthy and constructive communication.
+随着课外活动网站的发展，你需要的不仅仅是技术保护和贡献指南。你还需要鼓励健康和建设性的沟通。
 
-Let's look at a couple ways to do that:
+下面我们通过 Code of Conduct（行为准则）和 Issue Templates（问题模板）来营造健康的社区氛围。
 
-1. **Code of Conduct** - This document sets expectations for how community members should interact. Think of it like the Student Handbook at Mergington High - it outlines respectful behavior, how to report non-technical problems, and consequences for violations.
+1. **Code of Conduct** - 这是一个规范社区成员行为准则的文件。把它想象成为学生手册，其中规定了尊重他人的行为规范、如何报告非技术问题以及违反规定的后果。
 
-2. **Issue Templates** - These provide structure when someone reports a problem or suggests a new feature. They can help the community effectively communicate their needs for new features and provide enough information to solve bugs.
+2. **Issue Templates** - 问题模板要求大家按格式提问题，减少来回沟通成本
 
-## ⌨️ Activity: Set expectations with a Code of Conduct
+## ⌨️ 实操练习：用行为准则设定预期
 
-Let's start by establishing some community guidelines for your growing team of teacher-contributors.
+让我们先为日益壮大的教师贡献者团队建立一些社区准则。
 
 > [!TIP]
-> The [Contributor Covenant](https://www.contributor-covenant.org/) is a popular code of conduct used by many projects.
+> [Contributor Covenant](https://www.contributor-covenant.org/) 是许多项目使用的流行行为准则。
 
-1. At the top navigation, return to the **Code** tab. Ensure you are on the `prepare-to-collaborate` branch.
+1. 在顶部导航中，返回 **Code** 选项卡。确保你在 `prepare-to-collaborate` 分支上。
 
-1. In the top directory, create a new file called `CODE_OF_CONDUCT.md` (case sensitive).
+1. 在顶部目录，创建一个名为 `CODE_OF_CONDUCT.md` 的新文件（区分大小写）。
 
-1. Add the following content:
+1. 添加行为准则内容。
 
    ```markdown
    # Mergington High School Code of Conduct
@@ -84,30 +84,30 @@ Let's start by establishing some community guidelines for your growing team of t
    version 1.4, available at [https://www.contributor-covenant.org/version/1/4/code-of-conduct.html](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html)
    ```
 
-1. In the top right, use the **Commit changes...** button and commit your changes directly to `prepare-to-collaborate` branch.
+1. 在右上角，使用 **Commit changes...** 按钮，将你的修改直接提交到 `prepare-to-collaborate` 分支。
 
-## ⌨️ Activity: Communicate easier with issue templates
+## ⌨️ 实操练习：通过问题模板提升沟通效率
 
-Now let's create templates so other teachers can report bugs or request features in a standardized way.
+现在让我们创建 Issue 模板，以便其他教师可以以标准化的方式报告错误或提出新需求。
 
 > [!TIP]
-> You might consider trying the public preview for [issue forms](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms), which provide a friendlier user experience when creating issues.
+> 建议你可以考虑用一下正在测试中的 [Issue 表单功能](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms)，它能让大家提问题的时候更方便、更清晰。
 
-1. In the top navigation, select the **Settings** tab.
+1. 在顶部导航栏，选择 **Settings** tab。
 
-1. Find the **Features** section and verify **Issues** is enabled.
+1. 找到 **Features** 部分，确认 **Issues** 已启用。
 
    <img width="350" alt="" src="https://github.com/user-attachments/assets/dafb976b-4b8c-4c5e-8989-04d3e7bbe70d" />
 
-1. Click the **Set up templates** button to enter the issue templates editor.
+1. 点击 **Set up templates** 按钮进入问题模板编辑器。
 
    <img width="350" alt="image" src="https://github.com/user-attachments/assets/bd94af1e-d564-472f-a435-f12fa1bf3b5c" />
 
-1. Click the **Add template** dropdown and select **Bug report**.
+1. 点击 **Add template** 下拉菜单，选择 **Bug report**。
 
    <img width="350" alt="" src="https://github.com/user-attachments/assets/baee263d-b233-4029-b629-9544eacf1e27" />
 
-1. Click the **Preview and edit** button to show the current template. Click the **Edit icon** (pencil) to make the fields editable.
+1. 点击 **Preview and edit** 按钮查看当前模板。点击 **Edit icon** (铅笔) 图标进行编辑。
 
    <img width="350" alt="image" src="https://github.com/user-attachments/assets/1c8500f7-10b2-406b-9385-d5b9480e2f71" /><br/>
 
@@ -115,17 +115,17 @@ Now let's create templates so other teachers can report bugs or request features
 
    <img width="700" alt="image" src="https://github.com/user-attachments/assets/c2aecd6e-d021-4149-b088-7cbf883a7e33" />
 
-1. (Optional) Let's keep it simple for our students and fellow teachers. Remove the sections about Desktop and Smartphone details.
+1. (可选) 为了让我们的学生和老师更省心，可以删除关于桌面和手机详情的部分。
 
-1. Repeat the above steps for the "Feature request" template.
+1. 对 "Feature request" 模板重复上述步骤。
 
    <img width="350" alt="image" src="https://github.com/user-attachments/assets/6456e261-fcd8-4845-b1ab-f2c2d5883c77" />
 
-1. With our templates prepared, let's commit them. In the top right, click the **Propose changes** button. Enter a description and set the branch to `add-issue-templates`, then click **Commit changes**. You can ignore the automatically created pull request.
+1. 准备好模板后，让我们提交它们。点击右上角的 **Propose changes** 按钮。输入描述，并将分支设置为 `add-issue-templates`，然后点击 **Commit changes**。你可以忽略自动创建的拉取请求。
 
    <img width="350" alt="image" src="https://github.com/user-attachments/assets/a00a3740-ce0c-430c-9541-e56b7d9b45d6" />
 
-1. With the files committed, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+1. 提交文件后，等待片刻，让 Mona 检查你的工作、提供反馈并开启下一课。
 
 > [!TIP]
-> Did you notice that you are working in parallel on 2 branches now? That's exactly what working with multiple collaborators is like.
+> 你有没有注意到，现在你正在 2 个分支上并行工作？这正是多人协作时的真实写照。

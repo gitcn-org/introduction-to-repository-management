@@ -20,8 +20,8 @@ jobs:
     name: Start Exercise
     uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.6.0
     with:
-      exercise-title: "Introduction to Repository Management"
-      intro-message: "In this exercise, you'll configure your repository for easier collaboration. You'll learn how to protect your code, prepare for collaboration, and foster healthy growth in your projects."
+      exercise-title: "仓库管理介绍"
+      intro-message: "在本次课程中，你将学习如何为团队协作配置你的仓库。你会学习如何保护代码、为多人协作做好准备，并在项目中建立健康的成长与协作机制。"
 
   post_next_step_content:
     name: Post next step content

@@ -1,8 +1,8 @@
-# Step 5: Release
+# 步骤 5：发布（Release）
 
-With all our preparations ready, it's time to release them!
+所有准备工作都已就绪，是时候正式发布了！
 
-## ⌨️ Activity: Merge our collaboration changes
+## ⌨️ 实操练习：合并协作更改
 
 1. In the top navigation, select the **Pull requests** tab.
 
