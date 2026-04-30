@@ -4,10 +4,10 @@
 
 ## ⌨️ 实操练习：合并协作更改
 
-1. In the top navigation, select the **Pull requests** tab.
+1. 在顶部导航栏，选择 **Pull requests** 选项卡。
 
-1. Find the pull request for the `prepare-to-collaborate` branch and merge it. You may need to wait for your new security scans to finish.
+1. 找到 `prepare-to-collaborate` 分支的拉取请求并合并。你可能需要等待新的安全扫描完成。
 
-1. Find the pull request for the `add-issue-templates` branch and merge it. You may need to wait for your new security scans to finish.
+1. 找到 `add-issue-templates` 分支的拉取请求并合并。你可能需要等待新的安全扫描完成。
 
-1. With both pull requests merged, Mona will prepare the final review and acknowledge the exercise as finished! Nice work! You are all done! 🎉
+1. 两个拉取请求都合并后，Mona 将准备最终的评审并确认练习完成！干得漂亮！你已全部完成！🎉
